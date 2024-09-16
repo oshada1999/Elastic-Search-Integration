@@ -19,11 +19,28 @@ This project demonstrates how to set up and use Elasticsearch with a MySQL datab
 
 ## How to Run
 
-- Set up MySQL database with the necessary tables (categories, brands, products).
-- Install and configure Elasticsearch on your system.
--  Configure your application to connect to both MySQL and Elasticsearch.
-- Run the application to start indexing data from MySQL into Elasticsearch.
-- Access the search endpoint to perform queries.
+1. Set up MySQL database with the necessary tables (categories, brands, products).
+2. Install and configure Elasticsearch on your system.
+3. Run Elasticsearch
+   
+    - For Linux/macOS :
+ 
+     ```bash
+       ./bin/elasticsearch
+     ```
+   - For Windows :
+
+     ```bash
+      bin\elasticsearch.bat
+     ```
+   - To run Elasticsearch in the background on Linux/macOS :
+ 
+     ```bash
+      ./bin/elasticsearch -d
+     ```
+4. Configure your application to connect to both MySQL and Elasticsearch.
+5. Run the application to start indexing data from MySQL into Elasticsearch.
+6. Access the search endpoint to perform queries.
 
 ## Future Improvements
 
